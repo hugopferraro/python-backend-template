@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# uv
+.python-version
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Agents (Optional)
+.omx
+.claude
+
+# Other
+TODO.md

@@ -1,0 +1,6 @@
+from typing import Protocol
+
+
+class ErrorCode(Protocol):
+    def code(self) -> str: ...
+    def http_status(self) -> int: ...
