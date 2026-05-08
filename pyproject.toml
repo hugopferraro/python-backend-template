@@ -1,5 +1,5 @@
 [project]
-name = "Python Backend Template"
+name = "python-backend-template"
 version = "0.1.0"
 description = "This project template follows Clean Architecture patterns, providing clear sepparation between modules"
 readme = "README.md"

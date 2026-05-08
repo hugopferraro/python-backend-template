@@ -8,14 +8,18 @@ class Settings(BaseSettings):
     APP_ENV: str = "dev"  # dev | staging | prod
 
     # Database
-    DATABASE_URL: str
+    POSTGRES_USER: str
+    POSTGRES_PASSWORD: str
+    POSTGRES_HOST: str
+    POSTGRES_PORT: str
+    POSTGRES_DB: str
 
     # Data Security
     JWT_SECRET_KEY: str
     JWT_ALGORITHM: str
 
     # API Security
-    ALLOWED_ORIGINS: list[str] = ["http://localhost:5173"]
+    ALLOWED_ORIGINS: list[str] = []
 
     # Logging
     LOG_LEVEL: str = "INFO"  # DEBUG | INFO | WARNING | ERROR | CRITICAL

@@ -10,8 +10,13 @@ settings = get_settings()
 # echo=False - we control logging through our logging configuration instead
 # This prevents SQLAlchemy from creating its own handler and ensures
 # all logs go through our custom formatter
+DATABASE_URL = (
+    f"postgresql://{settings.POSTGRES_USER}:{settings.POSTGRES_PASSWORD}"
+    f"@{settings.POSTGRES_HOST}:{settings.POSTGRES_PORT}/{settings.POSTGRES_DB}"
+)
+
 engine = create_engine(
-    settings.DATABASE_URL,
+    DATABASE_URL,
     echo=settings.LOG_SQL_QUERIES,
     future=True,
 )
